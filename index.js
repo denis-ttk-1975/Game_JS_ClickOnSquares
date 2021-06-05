@@ -1,7 +1,15 @@
 var $start = document.querySelector('#start');
+var $game = document.querySelector('#game');
+console.log ($game);
 
 $start.addEventListener('click', startGame);
 
 function startGame() {
-	console.log('START');
+	$game.style.backgroundColor = '#fff';
+	$start.classList.add('hide');
+	renderBox();
+}
+
+function renderBox () {
+	
 }

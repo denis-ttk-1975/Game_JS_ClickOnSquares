@@ -82,10 +82,14 @@ function renderBox () {
 	var maxLeft = gameFieldSize.width - boxSize;
 	var boxTop = getRandom (0, maxTop);
 	var boxLeft = getRandom (0, maxLeft);
+	var redColor = getRandom (0, 255);
+	var greenColor = getRandom (0, 255);
+	var blueColor = getRandom (0, 255);
+
 	
 	box.style.height = box.style.width = boxSize + 'px';
 	box.style.position = 'absolute';
-	box.style.backgroundColor = 'red';
+	box.style.backgroundColor = 'rgb(' + redColor + ', ' + greenColor +', ' + blueColor + ')';
 	box.style.top = boxTop + 'px';
 	box.style.left = boxLeft + 'px';
 	box.style.cursor = 'pointer';
